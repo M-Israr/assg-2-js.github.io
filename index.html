@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        background-color: #5a5a5a;
+    }
+.btn {
+    transition: all .5s ease;
+    color: #fff;
+    border: 3px solid white;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover {
+    color: #001F3F;
+    background-color: #fff;
+}
+h1{
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+    <h1>My name is Muhammad Israr, and I am enrolled in the Web and App Development course at Suffah Coaching Center. In this course, I have been taught HTML, CSS, and Bootstrap, and JavaScript classes are currently ongoing.</h1>
+    <button onclick="checkWord()" class="btn">Includes!</button>
+
+
+    <script>
+        function checkWord() {
+    const txt = "My name is Muhammad Israr, and I am enrolled in the Web and App Development course at Suffah Coaching Center. In this course, I have been taught HTML, CSS, and Bootstrap, and JavaScript classes are currently ongoing.";
+    var textToCheck = prompt("Enter the text to search:");
+
+    if (txt.toLowerCase().includes(textToCheck.toLowerCase())) {
+        alert("The word you wrote has been found.");
+    } else {
+        alert("Text does not found the entered text.");
+    }
+}
+    </script>
+</body>
+</html>
